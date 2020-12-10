@@ -1,0 +1,13 @@
+# Target labels
+ siftgpu_proj
+# Source files and their labels
+/home/byf/code/rgbd/src/rgbdslam_v2-kinetic/builf/external/CMakeFiles/siftgpu_proj
+/home/byf/code/rgbd/src/rgbdslam_v2-kinetic/builf/external/CMakeFiles/siftgpu_proj.rule
+/home/byf/code/rgbd/src/rgbdslam_v2-kinetic/builf/external/CMakeFiles/siftgpu_proj-complete.rule
+/home/byf/code/rgbd/src/rgbdslam_v2-kinetic/builf/external/siftgpu_prefix/src/siftgpu_proj-stamp/siftgpu_proj-install.rule
+/home/byf/code/rgbd/src/rgbdslam_v2-kinetic/builf/external/siftgpu_prefix/src/siftgpu_proj-stamp/siftgpu_proj-mkdir.rule
+/home/byf/code/rgbd/src/rgbdslam_v2-kinetic/builf/external/siftgpu_prefix/src/siftgpu_proj-stamp/siftgpu_proj-download.rule
+/home/byf/code/rgbd/src/rgbdslam_v2-kinetic/builf/external/siftgpu_prefix/src/siftgpu_proj-stamp/siftgpu_proj-update.rule
+/home/byf/code/rgbd/src/rgbdslam_v2-kinetic/builf/external/siftgpu_prefix/src/siftgpu_proj-stamp/siftgpu_proj-patch.rule
+/home/byf/code/rgbd/src/rgbdslam_v2-kinetic/builf/external/siftgpu_prefix/src/siftgpu_proj-stamp/siftgpu_proj-configure.rule
+/home/byf/code/rgbd/src/rgbdslam_v2-kinetic/builf/external/siftgpu_prefix/src/siftgpu_proj-stamp/siftgpu_proj-build.rule
