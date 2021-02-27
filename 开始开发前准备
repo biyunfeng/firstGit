@@ -1,0 +1,72 @@
+准备工作
+1、sudo passwd设置超级管理员权限
+2、如果发现虚拟机中的ubuntu卡顿，请重新配置硬件，自行百度
+3、实际下载的时候会发现非常慢，请重新设置最合适的软件源，自行百度
+4、sudo apt install vim
+5、安装sogo，自行百度，有一个细节需要注意，多多尝试就可以的，可以看我给的文件夹
+6、设置独占模式，用起来更加方便
+7、可以设置整个系统的语言，毕竟英文看的有点蛋疼
+8、记得修改一下时区
+
+安装ros18.04
+1、sudo sh -c '. /etc/lsb-release && echo "deb http://mirrors.ustc.edu.cn/ros/ubuntu $DISTRIB_CODENAME main" > /etc/apt/sources.list.d/ros-latest.list'
+2、sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
+
+3、sudo apt-get update(you can百度一下这句话的意思)
+出现错误及时解决，不然后续安装会有问题
+
+4、sudo apt install ros-melodic-desktop-full
+喝一杯咖啡吧，估计要半个小时才能安装好
+5、sudo apt install rospack-tools
+6、sudo vi /etc/hosts
+将下面这句话添加到末尾，并保存退出
+151.101.84.133 raw.githubusercontent.com
+7、sudo rosdep init
+8、rosdep update 
+下面两句话就是配置环境变量，多用用就知道什么意思了
+9、echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
+10、source ~/.bashrc
+11、至此你的ros就安装好了
+12、启动一下master，$roscore
+    ctrl + c 退出，
+
+开发环境安装
+1、安装vscoder或者subline，网络安装非常慢，建议安装源码
+   sudo add-apt-repository ppa:ubuntu-desktop/ubuntu-make
+   出现错误百度解决(一定要解决，不然后面执行不下去)
+   sudo apt-get update
+   sudo apt-get install ubuntu-make
+   umake ide visual-studio-code
+安装完后/home/byf/.local/share/umake/ide/visual-studio-code/bin/code就可以启动你的编辑器了
+也可以设置别名如:
+在 ~/.bashrc加一句
+alias vsCode='/home/byf/.local/share/umake/ide/visual-studio-code/bin/code'
+$ source ~/.bashrc
+$ vsCode 
+
+2、安装git代码管理工具gitkraken
+3、建立与远程git仓库的链接
+
+------------------------今天就到这里吧，睡觉--------------------
+其他可以学习点:
+1、ubuntu网络配置，开机启动顺序
+2、ros使用技巧
+3、python脚本编写或者常用库使用
+4、.vimrc编辑插件等vim使用技巧
+5、ubuntu文件系统
+6、U盘挂载等操作
+7、sed使用技巧
+8、awk使用技巧
+9、常用shell脚本编写技巧
+
+高阶
+1、粒子滤波原理
+2、kf或者ekf
+3、eigen库使用技巧
+4、PCL，OpenCV常用库学习及使用
+5、Ceres Solver非线性优化库使用技巧
+6、gmapping，movebase，cartographer常用开源软件学习
+7、分支定界法等常见算法
+8、视觉slam目前我也在学习，可以向星姐讨教一二
+
+至此，开始愉快的代码开发工作吧
